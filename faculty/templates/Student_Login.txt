@@ -1,0 +1,53 @@
+1)Login Page   -  Student Login ,Faculty Login. (Separate Login) -Cant access my acnt  (Auto Generated)  -
+
+     Student Login :
+ 
+2) DashBoard -  a)history and status   (static)
+		b)Apply
+		c)Student Details View Profile. (change password) - Student Dashboard
+		d)Logout
+		e)Home
+3)History/Status -  a)List:
+	             
+                    b)Leave	Type 	Date	Periods		Status		AppliedTo 	ApprovedBy Start Date 	End Date
+		    
+		    c)sort by (Checkbox): OD,SickLeave,Others
+
+
+4) Apply -	 Rollnumber:                                     Notes:
+ 									1) Periods Mention
+									2)File upload     
+		 Name:
+		 Type:
+		 Dates:
+		 Periods(optional):
+		 Reason(max char):
+		 File Upload(optional):
+                 Submit Button 			Cancel		Reset
+
+
+5)Review Page:    edit and check.  submit and direct to history/status.
+
+6)logout .
+
+#Validations:
+Not Empty
+Periods Validation
+
+
+
+		 
+		 
+		
+		    
+
+	
+		
+               
+
+               
+
+
+   
+
+

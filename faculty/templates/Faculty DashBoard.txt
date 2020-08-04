@@ -1,0 +1,29 @@
+1) Faculty Login:   UN & PW
+
+2) DashBoard -  a)history and status   (static)
+		b)Approve
+		c)Student Details View Profile. (change password) - Student Dashboard
+		d)Logout
+		e)Home
+3)History/Status -  a)List:
+	             
+                    b)Leave	Type 	Date	Periods		Status		AppliedBy 	 Start Date 	End Date
+		    
+		    
+		    c)sort by (Checkbox): OD,SickLeave,Others
+
+
+
+4)Pending passes:
+                     List:  Pass (Type),Student  Leave	Type 	Date	Periods		Status		AppliedBy 	 Start Date 	End Date  
+
+			Button To view the history(not history/status).
+
+
+5)Review Page:    edit and check.  submit and direct to history/status.
+
+6)logout .
+
+                     
+
+
