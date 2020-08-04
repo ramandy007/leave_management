@@ -1,0 +1,237 @@
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <style>
+html,
+body {
+  margin: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+* {
+  box-sizing: border-box;
+}
+
+.sidebar ul li a span.title {
+  display: inline-block;
+}
+.sidebar span.icon {
+  margin-right: 10px;
+  display: inline-block;
+}
+.footer {
+  background-color: #f5f5f5;
+  display: block;
+  text-align: center;
+}
+.sidebar ul li a {
+  display: block;
+  padding: 3px;
+
+  margin-bottom: 10px;
+  margin-right: 10px;
+  color: black;
+  background-color: white;
+  position: relative;
+
+  text-decoration: none;
+}
+
+.sidebar {
+  width: 250px;
+}
+      </style>
+      <title>Leave Approval</title>
+    </head>
+    <body>
+      <div class="row">
+        <div class="col-sm">
+          <nav class="navbar navbar-default" style="background-color: black;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <img src="amrita.png" />
+              </div>
+              <div class="nav navbar-right">
+                <li class="dropdown">
+                  <a
+                    class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="#"
+                    style="background-color: black; color: white;"
+                    >Good Evening Balaji Sundar A <span class="caret"></span
+                  ></a>
+  
+                  <ul class="dropdown-menu" style="background-color: white;">
+                    <li>
+                      <a href="#" style="margin-left: 10px; color: black;"
+                        >Update Profile</a
+                      >
+                    </li>
+  
+                    <li>
+                      <a href="#" style="margin-left: 10px; color: black;"
+                        >Change Password</a
+                      >
+                    </li>
+                    <div class="border-top my-3"></div>
+  
+                    <li>
+                      <a
+                        href="login.html"
+                        style="margin-left: 10px; color: black;"
+                        >Logout</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-2 col-md-3 sidebar">
+            <div class="sidebar" style="margin-top: 100px;">
+              <ul style="list-style: none;" class="">
+                <li>
+                  <a href="#" class="card">
+                    <span class="icon"><i class="fa fa-desktop"></i></span>
+                    <span class="title">Faculty Dashboard</span>
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="#" class="card">
+                    <span class="icon"><i class="fa fa-user-circle-o"></i></span>
+                    <span class="title">View Profile</span>
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="#" class="card">
+                    <span class="icon"><i class="fa fa-calendar"></i></span>
+                    <span class="title">Aprove Leave</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="container">
+            <center>
+                <div class="container">
+                <table class="table" >
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Roll Number</th>
+                        <th>Type</th>
+                        <th>Periods</th>
+                        <th>Date[From]</th>
+                        <th>Date[To]</th>
+                        <th>History</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            M Mahalakshmi
+                        </td>
+                        <td>
+                            CB.EN.U4CSE17233
+                        </td>
+                        <td>
+                            On Duty 
+                        </td>
+                        <td>
+                            1-5
+                        </td>
+                        <td>
+                            12/05/2020
+                        </td>
+                        <td>
+                            12/05/2020
+                        </td>
+                         <td>
+                             <button type="button" class="btn btn-light" style="color:black;background-color: rgba(226, 214, 214, 0.904);" data-toggle="modal" data-target="#myModal">View Previous</button>
+                             <div class="modal fade" id="myModal" role="dialog">
+                                 <div class="modal-dialog">                        
+                                   <div class="modal-content">
+                                     <div class="modal-header">
+                                         <h4 class="modal-title">M Mahalakshmi</h4>
+                                       <button type="button" class="fa fa-close" data-dismiss="modal"></button> 
+                                       
+                                     </div>
+                                     <div class="modal-body">
+                                         <table class="table" >
+                                             <thead>
+                                             <tr>
+                                                 <th>Type</th>
+                                                 <th>Periods</th>
+                                                 <th>Date[From]</th>
+                                                 <th>Date[To]</th>
+                                             </tr>
+                                             </thead>
+                                             <tbody>
+                                                 <tr>
+                                                     <td>
+                                                         Medical
+                                                     </td>
+                                                     <td>
+                                                         5-7
+                                                     </td>
+                                                     <td>
+                                                         12/05/2020
+                                                     </td>
+                                                     <td>
+                                                         12/05/2020
+                                                     </td>
+                                                 </tr>
+                                             </tbody>
+                                         </table>
+                                     </div>                                                              
+                                     </div>                                    
+                                   </div>
+                                   
+                                 </div>
+                               </div>
+                               
+                             </div>
+                         </td>
+                     </tr>
+                 </tbody>
+                 </table>
+             </div>
+         </div>
+             </center>
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>
+  
