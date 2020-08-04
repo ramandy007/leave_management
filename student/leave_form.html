@@ -63,8 +63,8 @@
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-2 col-md-3 sidebar">
-          <div class="sidebar" style="margin-top: 100px;">
+        <div class="col-xs-2 col-md-3">
+          <div class="sidebar">
             <ul style="list-style: none;" class="">
               <li>
                 <a href="#" class="card">
@@ -98,73 +98,71 @@
         </div>
 
         <!-- swappable body starts here  -->
-        <!-- column 1 starts here -->
-        <div class="col-sm mainbar">
-          <h3 style="margin-top: 0;">Dashboard</h3>
-          <div class="row">
-            <div class="col-sm panel-item">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+        <div class="col-md-8 form-padding">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="Rollnumber">RollNumber</label>
+                <input type="Text" class="form-control" id="RollNumber" />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" id="Name" />
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm panel-item">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="Type">Type</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Type"
+                  placeholder="OD/Personal/Medical"
+                />
+              </div>
+              <div class="form-group col-md-8">
+                <label for="Reason">Reason (optional)</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Reason"
+                  placeholder="Reason for request?"
+                  maxlength="250"
+                />
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- column 1 ends here -->
-        <!-- column 2 starts here  -->
-        <div class="col-sm">
-          <h3 style="margin-top: 42px;"></h3>
-          <div class="row">
-            <div class="col-sm panel-item">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+
+            <div class="form-group">
+              <label for="upload_Proof">Upload Proof(optional)</label>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile" />
+                <label class="custom-file-label" for="customFile"
+                  >Choose file</label
+                >
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm panel-item">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity" />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip" />
+              </div>
             </div>
-          </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
       </div>
-      <!-- column2 ends here -->
       <!-- swappable body ends here -->
       <!-- footer starts here -->
       <div class="row">

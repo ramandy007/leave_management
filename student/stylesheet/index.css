@@ -43,4 +43,14 @@ body {
 
 .sidebar {
   width: 250px;
+  margin-top: 100px;
+}
+
+.panel-item {
+  margin-bottom: 0.5em;
+  box-shadow: 0.2em 0.2em 0.2em gray;
+}
+
+.form-padding {
+  padding-top: 1em;
 }
