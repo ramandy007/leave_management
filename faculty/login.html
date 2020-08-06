@@ -41,29 +41,15 @@
        {
            var x=document.forms["myform"]["un"].value;
            var y=document.forms["myform"]["pw"].value;
-           if(x=="")
+           if(x=='cb.en.u4cse17213' && y=='balaji2k.')
            {
-            alert('Empty Username');
-            return false;
-           }
-           if(y=="")
-           {
-            alert('Empty Password');
-            return false;
-           }
-           else if(x!="cb.en.u4cse17213")
-           {
-               alert('Invalid Username');
-               return false;
-           }
-           else if(y!="balaji2k.")
-           {
-               alert('Wrong Credentials');
-               return false;
+               return true;
            }
            else{
-            window.location='home.html';
+               alert("Invalid Credentials")
+               return false;
            }
+           
        }
        
    </script>
