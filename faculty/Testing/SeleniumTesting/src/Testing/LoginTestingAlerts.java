@@ -14,7 +14,7 @@ public class LoginTestingAlerts
 		{
 			System.setProperty("webdriver.chrome.driver","src\\Testing\\chromedriver.exe");
 			WebDriver driver=new ChromeDriver();
-			driver.get("https://ramandy007.github.io/leave_management/faculty/login.html");			
+			driver.get("https://ramandy007.github.io/leave_management/faculty/login.html");
 			driver.manage().window().maximize();
 			driver.findElement(By.id("un")).sendKeys(tcun[i]);
 			driver.findElement(By.id("pw")).sendKeys(tcpw[i]);
