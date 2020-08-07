@@ -63,19 +63,30 @@
       </div>
     </div>
     <script>
-      function validateForm() {
+      function validateForm() 
+      {
         var x = document.forms["myform"]["un"].value;
         var y = document.forms["myform"]["pw"].value;
-        if (x == "cb.en.u4cse17213" && y == "balaji2k.") {
+        if (x == "cb.en.u4cse17213" && y == "balaji2k.") 
+        {
           return true;
-        } else {
-          if (x == "" && y == "") {
+        } 
+        else 
+        {
+          if (x == "" && y == "") 
+          {
             alert("Both Fields Are Empty");
-          } else if (x == "") {
+          } 
+          else if (x == "") 
+          {
             alert("User Name Field Is Empty");
-          } else if (y == "") {
+          } 
+          else if (y == "") 
+          {
             alert("Password Field Is Empty");
-          } else {
+          } 
+          else 
+          {
             alert("Invalid Credentials");
           }
           return false;
