@@ -15,18 +15,19 @@
           });
           $(document).ready(function(){
             $("#hell").click(function(){
-              $(".hello").show()
-              $("#hell1").show()
-              $("#hell").hide()
+              $(".hello").slideDown("slow")
+              $("#hell1").slideDown("slow")
+              $("#hell").slideUp("slow")
             });
           });
           $(document).ready(function(){
             $("#hell1").click(function(){
-              $(".hello").hide()
-              $("#hell1").hide()
-              $("#hell").show()
+              $(".hello").slideUp("slow")
+              $("#hell1").slideUp("slow")
+              $("#hell").slideDown("slow")
             });
           });
+        ;
         </script>        
       <style>
 html,
@@ -59,8 +60,14 @@ body {
   text-decoration: none;
 }
 .sidebar {
+  
   width: 250px;
 }
+
+.current-link {
+    color:#baada7;
+}
+
 </style>
 <title>Faculty Dashboard</title>
 </head>
@@ -87,11 +94,11 @@ body {
       </nav>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-xs-2 col-md-3 sidebar">
-            <div class="sidebar" style="margin-top: 100px;">
-              <ul style="list-style: none;" class="">
+          <div class="col-xs-2 col-md-3 sidebar" id="s">
+            <div class="  sidebar " style="margin-top: 100px;">
+              <ul style="list-style: none;">
                 <li>
-                  <a href="home.html" class="card">
+                  <a href="home.html" class="card " style="background-color:#007BFF; color:white  ;">
                     <span class="icon"><i class="fa fa-desktop"></i></span>
                     <span class="title">Faculty Dashboard</span>
                   </a>
