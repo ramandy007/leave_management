@@ -1,0 +1,181 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <style>
+            .sidebar ul li a span.title
+      {
+        display: inline-block;
+      }
+      .sidebar span.icon
+      {
+        margin-right: 10px;
+        display: inline-block;
+      }
+      .sidebar ul li a
+      {
+        display: block;
+        padding: 3px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        color: black;
+        background-color: white;
+        position: relative;
+        text-decoration: none;
+      }
+      .sidebar
+      {
+        width: 250px;
+        margin-top: 100px;
+      }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-default" style="background-color: black;">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <img src="https://cms.cb.amrita.edu/images/amrita_wide_short_new.png" alt="College Logo"/>
+                        </div>
+                        <div class="nav navbar-right">
+                            <li class="dropdown">
+                                <a
+                                class="dropdown-toggle"
+                                data-toggle="dropdown"
+                                href="#"
+                                style="background-color: black; color: white;"
+                                >Good Evening Balaji Sundar A <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: white;">
+                                    <li>
+                                        <a href="#" style="margin-left: 10px; color: black;">Update Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ChangePW.html" style="margin-left: 10px; color: black;">Change Password
+                                        </a>
+                                    </li>
+                                    <div class="border-top my-3"></div>
+                                    <li>
+                                        <a
+                                        href="login.html"
+                                        style="margin-left: 10px; color: black;"
+                                        >Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="sidebar" style="margin-left: 40px;">
+                        <ul style="list-style: none;" class="">
+                            <li>
+                                <a href="home.html" class="card">
+                                    <span class="icon"><i class="fa fa-desktop"></i></span>
+                                    <span class="title">Faculty Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="card">
+                                    <span class="icon"><i class="fa fa-user-circle-o"></i></span>
+                                    <span class="title">Faculty Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="FacultyApproval.html" class="card">
+                                    <span class="icon"><i class="fa fa-calendar"></i></span>
+                                    <span class="title">Approve Leave</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>      
+                <div class="col-md-6" style="margin-top: 20px;">
+                    <h1>Edit Profile</h1>
+                    <hr>
+                    <div class="text-center">
+                        <img src="Images/placeholder1.png" class="avatar img-circle" alt="avatar">
+                        <h6>Upload a different photo</h6>
+                        <center><input type="file" style="margin-left: 80px;"></center>
+                    </div>   
+                    <br>                              
+                    <h3>Personal Info</h3>     
+                    <br>               
+                    <form class="form-horizontal" role="form" action="FacultyProfile.html" method="GET">
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Email</label>
+                            <div class="col-lg-8">
+                                <input class="form-control" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
+                            </div>                        
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">LinkedIn Profile</label>
+                            <div class="col-lg-8">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <br>
+                        <h3>Academic Info</h3>
+                        <br>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Areas Of Research</label>
+                            <div class="col-lg-8">
+                                <input class="form-control" type="text" value="">
+                            </div>
+                            <br>
+                            <div class="col-lg-8">
+                                <input class="form-control" type="text" value="">
+                            </div>
+                            <br>
+                            <div class="col-lg-8">
+                                <input class="form-control" type="text" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-4 control-label">Highest Degree Obtained</label>
+                            <div class="col-lg-8">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Paper Publications</label>
+                            <div class="col-md-8">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Projects Guided</label>
+                            <div class="col-md-8">
+                                <input class="form-control" type="number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"></label>
+                            <div class="col-md-8">
+                                <input type="submit" class="btn btn-primary" value="Save Changes">
+                                <span></span>
+                                <input type="reset" class="btn btn-outline-secondary" value="Cancel">
+                            </div>
+                      </div>
+                    </form>
+                  
+              </div>
+            </div>
+            <hr>
+    
+</body>
+</html>
