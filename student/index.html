@@ -1,201 +1,101 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link type="text/css" rel="stylesheet" href="stylesheet/index.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leave Approval</title>
+
+    <title>
+      Login Page
+    </title>
   </head>
   <body>
-    <div class="row">
-      <div class="col-sm">
-        <nav class="navbar navbar-default" style="background-color: black;">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <img src="public/amrita.png" />
-            </div>
-            <div class="nav navbar-right">
-              <li class="dropdown">
-                <a
-                  class="dropdown-toggle"
-                  data-toggle="dropdown"
-                  href="#"
-                  style="background-color: black; color: white;"
-                  >Good Evening Balaji Sundar A <span class="caret"></span
-                ></a>
-
-                <ul class="dropdown-menu" style="background-color: white;">
-                  <li>
-                    <a href="#" style="margin-left: 10px; color: black;"
-                      >Update Profile</a
-                    >
-                  </li>
-
-                  <li>
-                    <a href="#" style="margin-left: 10px; color: black;"
-                      >Change Password</a
-                    >
-                  </li>
-                  <div class="border-top my-3"></div>
-
-                  <li>
-                    <a
-                      href="login.html"
-                      style="margin-left: 10px; color: black;"
-                      >Logout</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-2 col-md-3 sidebar">
-          <div class="sidebar" style="margin-top: 100px;">
-            <ul style="list-style: none;" class="">
-              <li>
-                <a href="#" class="card">
-                  <span class="icon"><i class="fa fa-desktop"></i></span>
-                  <span class="title">Student Dashboard</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="card">
-                  <span class="icon"><i class="fa fa-user-circle-o"></i></span>
-                  <span class="title">View Profile</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="card">
-                  <span class="icon"><i class="fa fa-calendar"></i></span>
-                  <span class="title">Apply Leave</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="card">
-                  <span class="icon"><i class="fa fa-book"></i></span>
-                  <span class="title">History & Status</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <img
+            src="public/logo2.png"
+            height="200px"
+            style="margin-top: 200px; margin-left: 170px;"
+          />
         </div>
-
-        <!-- swappable body starts here  -->
-        <!-- column 1 starts here -->
-        <div class="col-sm mainbar">
-          <h3 style="margin-top: 0;">Dashboard</h3>
-          <div class="row">
-            <div class="col-sm panel-item panel-list">
-              <dl class="list-group list-group-flush">
-                <li class="list-group-item active">Slot Timings</li>
-                <li class="list-group-item">Slot 1: 09:00 - 10:00</li>
-                <li class="list-group-item">Slot 2: 10:00 - 11:00</li>
-                <li class="list-group-item">Slot 3: 11:00 - 12:00</li>
-                <li class="list-group-item">Slot 4: 12:00 - 01:00</li>
-                <li class="list-group-item">Slot 5: 02:00 - 03:00</li>
-                <li class="list-group-item">Slot 6: 03:00 - 04:00</li>
-                <li class="list-group-item">Slot 7: 04:00 - 05:00</li>
-                <li class="list-group-item">Slot 8: 05:00 - 06:00</li>
-              </dl>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <form
+            name="myform"
+            style="margin-top: 200px;"
+            onsubmit="return validateForm()"
+            method="post"
+            action="home.html"
+          >
+            <h1 style="font-size: 30px;">Login</h1>
+            <br />
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Username"
+                id="un"
+                width="100px"
+              />
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm panel-item">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+            <div class="form-group">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Enter Password"
+                id="pw"
+                width="100px"
+              />
             </div>
-          </div>
-        </div>
-        <!-- column 1 ends here -->
-        <!-- column 2 starts here  -->
-        <div class="col-sm">
-          <h3 style="margin-top: 42px;"></h3>
-          <div class="row">
-            <div class="col-sm panel-item">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm panel-item">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </div>
-          </div>
+            <button class="btn btn-info" type="submit" id="sb">Login</button>
+            <button
+              class="btn btn-default"
+              style="background-color: black; color: white;"
+              type="reset"
+            >
+              Reset
+            </button>
+          </form>
         </div>
       </div>
-      <!-- column2 ends here -->
-      <!-- swappable body ends here -->
-      <!-- footer starts here -->
-      <div class="row">
-        <div class="col-sm align-self-end">
-          <footer class="footer mt-auto py-3">
-            <div class="container">
-              <span class="text-muted">Copyleft rats.ltd</span>
-            </div>
-          </footer>
-        </div>
-      </div>
-      <!-- footer ends here -->
     </div>
+    <script>
+      function validateForm() 
+      {
+        var x = document.forms["myform"]["un"].value;
+        var y = document.forms["myform"]["pw"].value;
+        if (x == "cb.en.u4cse17213" && y == "balaji2k.") 
+        {
+          return true;
+        } 
+        else 
+        {
+          if (x == "" && y == "") 
+          {
+            alert("Both Fields Are Empty");
+          } 
+          else if (x == "") 
+          {
+            alert("User Name Field Is Empty");
+          } 
+          else if (y == "") 
+          {
+            alert("Password Field Is Empty");
+          } 
+          else 
+          {
+            alert("Invalid Credentials");
+          }
+          return false;
+        }
+      }
+    </script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </body>
 </html>
