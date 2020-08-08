@@ -21,16 +21,16 @@
       });
       $(document).ready(function () {
         $("#hell").click(function () {
-          $(".hello").show();
-          $("#hell1").show();
-          $("#hell").hide();
+          $(".hello").slideDown("slow");
+          $("#hell1").slideDown("slow");
+          $("#hell").slideUp("slow");
         });
       });
       $(document).ready(function () {
         $("#hell1").click(function () {
-          $(".hello").hide();
-          $("#hell1").hide();
-          $("#hell").show();
+          $(".hello").slideUp("slow");
+          $("#hell1").slideUp("slow");
+          $("#hell").slideDown("slow");
         });
       });
     </script>
