@@ -168,167 +168,168 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-            <div class="col-xs-2 col-md-3">
-                <div class="sidebar">
-                <ul style="list-style: none;" class="">
-                    <li>
-                    <a href="home.html" class="card">
-                        <span class="icon"><i class="fa fa-desktop"></i></span>
-                        <span class="title">Student Dashboard</span>
-                    </a>
-                    </li>
-    
-                    <li>
-                    <a href="studentProfile.html" class="card" style="background-color:#007BFF; color:white;">
-                        <span class="icon"><i class="fa fa-user-circle-o"></i></span>
-                        <span class="title">View Profile</span>
-                    </a>
-                    </li>
-    
-                    <li>
-                    <a href="leaveForm.html" class="card">
-                        <span class="icon"><i class="fa fa-calendar"></i></span>
-                        <span class="title">Apply Leave</span>
-                    </a>
-                    </li>
-    
-                    <li>
-                    <a href="history.html" class="card">
-                        <span class="icon"><i class="fa fa-book"></i></span>
-                        <span class="title">History & Status</span>
-                    </a>
-                    </li>
-                </ul>
+                <div class="col-xs-2 col-md-3">
+                    <div class="sidebar">
+                        <ul style="list-style: none;" class="">
+                            <li>
+                            <a href="home.html" class="card">
+                                <span class="icon"><i class="fa fa-desktop"></i></span>
+                                <span class="title">Student Dashboard</span>
+                            </a>
+                            </li>
+            
+                            <li>
+                            <a href="studentProfile.html" class="card" style="background-color:#007BFF; color:white;">
+                                <span class="icon"><i class="fa fa-user-circle-o"></i></span>
+                                <span class="title">View Profile</span>
+                            </a>
+                            </li>
+            
+                            <li>
+                            <a href="leaveForm.html" class="card">
+                                <span class="icon"><i class="fa fa-calendar"></i></span>
+                                <span class="title">Apply Leave</span>
+                            </a>
+                            </li>
+            
+                            <li>
+                            <a href="history.html" class="card">
+                                <span class="icon"><i class="fa fa-book"></i></span>
+                                <span class="title">History & Status</span>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- swappable body starts here  -->
+                <div class="col-sm col-xs col-md" style="padding-right: 50px;">
+                    <h2 style="padding-top: 50px;">Profile</h2><br/>
+                        <form method="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="profile-img">
+                                        <img src="public/student.png" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="profile-head">
+                                        <h5>
+                                            NameOfTheStudent
+                                        </h5>
+                                        <h6>
+                                            Roll Number
+                                        </h6>
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Guardian Details</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="profile-work">
+                                        <p>Personal Email</p>
+                                        <i class="text-primary">studentname@gmail.com</i><br/>
+                                        <p>Mobile Number</p>
+                                        <i class="text-primary">9876543210</i>
+                                        <p>Admitted Campus</p>
+                                        <i class="text-primary">Coimbatore</i><br/>
+                                        <p>Blood Group</p>
+                                        <i class="text-primary">O +Ve</i><br/>
+                                        <p>DOB</p>
+                                        <i class="text-primary">09/08/1999</i><br/>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="tab-content profile-tab" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Department</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>Computer Science and Engineering</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Email</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>cb.en.u4cse172XX@cb.students.amrita.edu</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Class Advisor</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>Mr.M.Ritwik</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Current Semester</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>7</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Current CGPA</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>8.54</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Primary Guardian Name</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>Mr.V.Raj</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Mobile</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>8794561320</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Relation</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>Father</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Email</label>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>raj1320@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>           
                 </div>
             </div>
-
-            <!-- swappable body starts here  -->
-        <div class="col-sm col-xs col-md" style="padding-right: 50px;">
-            <h2 style="padding-top: 50px;">Profile</h2><br/>
-            <form method="post">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="profile-img">
-                            <img src="public/student.png" alt=""/>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="profile-head">
-                                    <h5>
-                                        NameOfTheStudent
-                                    </h5>
-                                    <h6>
-                                        Roll Number
-                                    </h6>
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Guardian Details</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="profile-work">
-                            <p>Personal Email</p>
-                            <i class="text-primary">studentname@gmail.com</i><br/>
-                            <p>Mobile Number</p>
-                            <i class="text-primary">9876543210</i>
-                            <p>Admitted Campus</p>
-                            <i class="text-primary">Coimbatore</i><br/>
-                            <p>Blood Group</p>
-                            <i class="text-primary">O +Ve</i><br/>
-                            <p>DOB</p>
-                            <i class="text-primary">09/08/1999</i><br/>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="tab-content profile-tab" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Department</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Computer Science and Engineering</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Email</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>cb.en.u4cse172XX@cb.students.amrita.edu</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Class Advisor</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Mr.M.Ritwik</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Current Semester</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>7</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Current CGPA</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>8.54</p>
-                                            </div>
-                                        </div>
-                            </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Primary Guardian Name</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Mr.V.Raj</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Mobile</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>8794561320</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Relation</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>Father</p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <label>Email</label>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p>raj1320@gmail.com</p>
-                                            </div>
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>           
         </div>
-    </div>
     </body>
 </html>

@@ -1,3 +1,4 @@
+<!DOCTYPE <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -14,9 +15,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <title>
-      Change Password
-    </title>
     <style>
       .sidebar ul li a span.title {
         display: inline-block;
@@ -59,29 +57,30 @@
                   data-toggle="dropdown"
                   href="#"
                   style="background-color: black; color: white;"
-                  >Good Evening Balaji Sundar A <span class="caret"></span
-                ></a>
+                  >Good Evening Balaji Sundar A <span class="caret"></span>
+                </a>
                 <ul class="dropdown-menu" style="background-color: white;">
                   <li>
-                    <a href="#" style="margin-left: 10px; color: black;"
-                      >Update Profile</a
-                    >
+                    <a
+                      href="studentProfile.html"
+                      style="margin-left: 10px; color: black;"
+                      >Update Profile
+                    </a>
                   </li>
                   <li>
                     <a
                       href="changePassword.html"
                       style="margin-left: 10px; color: black;"
-                      style="background-color: #8dd1f3;"
-                      >Change Password</a
-                    >
+                      >Change Password
+                    </a>
                   </li>
                   <div class="border-top my-3"></div>
                   <li>
                     <a
                       href="index.html"
                       style="margin-left: 10px; color: black;"
-                      >Logout</a
-                    >
+                      >Logout
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -93,7 +92,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12 col-md-4">
-          <div class="sidebar" style="margin-left: 60px;">
+          <div class="sidebar" style="margin-left: 40px;">
             <ul style="list-style: none;" class="">
               <li>
                 <a href="home.html" class="card">
@@ -104,7 +103,7 @@
               <li>
                 <a href="studentProfile.html" class="card">
                   <span class="icon"><i class="fa fa-user-circle-o"></i></span>
-                  <span class="title">View Profile</span>
+                  <span class="title">Student Profile</span>
                 </a>
               </li>
               <li>
@@ -122,108 +121,106 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4">
+        <div class="col-md-6" style="margin-top: 20px;">
+          <h1>Edit Profile</h1>
+          <hr />
+          <div class="text-center">
+            <img
+              src="public/student.png"
+              class="avatar img-circle"
+              alt="avatar"
+            />
+            <h6>Upload a different photo</h6>
+            <input
+              type="file"
+              style="margin-left: 80px;"
+              style="align-self: center;"
+            />
+          </div>
+          <br />
+          <h3>Personal Info</h3>
+          <br />
           <form
-            name="myform"
-            style="margin-top: 50px; padding-left: 30px;"
-            onsubmit="return validate()"
-            action="home.html"
-            method="post"
+            class="form-horizontal"
+            role="form"
+            action="studentProfile.html"
+            method="GET"
           >
-            <h1 style="font-size: 30px;"><center>Change Password</center></h1>
+            <div class="form-group">
+              <label class="col-lg-3 control-label">Personal Email</label>
+              <div class="col-lg-8">
+                <input
+                  class="form-control"
+                  type="email"
+                  placeholder="New Email"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-3 control-label">Phone Number</label>
+              <div class="col-lg-8">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="New Phone Number"
+                />
+              </div>
+            </div>
+            <br />
+            <h3>Primary Guardian Details</h3>
             <br />
             <div class="form-group">
-              <input
-                type="password"
-                class="form-control"
-                placeholder="Enter Current Password"
-                id="currpw"
-                width="100px"
-              />
+              <label class="col-lg-3 control-label">Name</label>
+              <div class="col-lg-8">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Specify Primary Guardian Name"
+                />
+              </div>
+              <br />
             </div>
             <div class="form-group">
-              <input
-                type="password"
-                class="form-control"
-                placeholder="Enter Password"
-                id="pw"
-                width="100px"
-              />
+              <label class="col-lg-4 control-label">Phone Number</label>
+              <div class="col-lg-8">
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Guardian Phone Number"
+                />
+              </div>
             </div>
             <div class="form-group">
-              <input
-                type="password"
-                class="form-control"
-                placeholder="Re-Enter Password"
-                id="repw"
-                width="100px"
-              />
+              <label class="col-md-3 control-label">Email</label>
+              <div class="col-md-8">
+                <input
+                  class="form-control"
+                  type="email"
+                  placeholder="Guardian Email Address"
+                />
+              </div>
             </div>
-            <button class="btn btn-primary" type="submit">
-              Change Password
-            </button>
+            <div class="form-group">
+              <label class="col-md-3 control-label"></label>
+              <div class="col-md-8">
+                <input
+                  type="submit"
+                  class="btn btn-primary"
+                  value="Save Changes"
+                />
+                <span></span>
+                <input
+                  type="reset"
+                  class="btn btn-default"
+                  style="background-color: black; color: white;"
+                  value="Cancel"
+                />
+              </div>
+            </div>
           </form>
         </div>
       </div>
+      <hr />
     </div>
-    <script>
-      function validateForm() {
-        var isValid = true;
-        var x = document.forms["myform"]["currpw"].value;
-        var y = document.forms["myform"]["pw"].value;
-        var z = document.forms["myform"]["repw"].value;
-        if (x == "" && y == "" && z == "") {
-          alert("All Fields Cant Be Empty");
-          isValid = false;
-        } else if (x != "" && y == "" && z == "") {
-          alert(
-            "Both New Password And Re-Enter New Password Fields Cant Be Empty"
-          );
-          isValid = false;
-        } else if (x == "" && y == "" && z != "") {
-          alert("Both Current Password And New Password Fields Cant Be Empty");
-          isValid = false;
-        } else if (x == "" && y != "" && z == "") {
-          alert(
-            "Both Current Password And Re-Enter New Password Fields Cant Be Empty"
-          );
-          isValid = false;
-        } else if (x == "") {
-          alert("Current Password Field Cant Be Empty");
-          isValid = false;
-        } else if (y == "") {
-          alert("New Password Field Cant Be Empty");
-          isValid = false;
-        } else if (z == "") {
-          alert("Re-Enter New Password Field Cant Be Empty");
-          isValid = false;
-        } else if (x != "balaji2k.") {
-          alert("Incorrect Current Password");
-          isValid = false;
-        } else if (y != z) {
-          alert("New Password Does Not Match With Re-Entered New Password");
-          isValid = false;
-        } else {
-          var paswd = /^(?=.*[0-9])(?=.*[!@#$%^&*.])[a-zA-Z0-9!@#$%^&*.]{7,15}$/;
-          if (y.match(paswd)) {
-            var r = confirm("Are You Sure Of Changing Your Password");
-            if (r == true) {
-              alert("Password Changed Successfully");
-            } else {
-              isValid = false;
-            }
-          } else {
-            alert(
-              "New Password Should Be Between 7 To 15 Characters Which Contains At Least One Numeric Digit And A Special Character"
-            );
-            isValid = false;
-          }
-        }
-        return isValid;
-      }
-      function validate() {
-        return validateForm();
-      }
-    </script>
   </body>
 </html>

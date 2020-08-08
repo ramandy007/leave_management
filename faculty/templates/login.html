@@ -1,63 +1,80 @@
 <html>
-    <head>
-       
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-      </head>
-      <body>
-          <div class="container-fluid">
-              <div class="row">
-                  <div class="col-sm-4">
-                      <img src="logo2.png" height="200px" style="margin-top:200px; margin-left:170px;">
-                  </div>
-                  <div class="col-sm-4">
-                    
-                    <form name="myform" style="margin-top:200px;" onsubmit="return validateForm()" method="post">
-                        <h1 style="font-size: 30px;" >Login</h1> <br> 
-                        
-                            <div class="form-group">
-                              
-                              <input type="text" class="form-control" placeholder="Enter Username" id="un" width=100px>
-                            </div>
-                            <div class="form-group">
-                              
-                                <input type="password" class="form-control" placeholder="Enter Password" id="pw" width=100px>
-                              </div>
-                            <button class="btn btn-info" type="submit"> Login </button>
-                            <button class="btn btn-default" style="background-color:black; color:white;" type="reset"> Reset </button>
-                    </form>
-                </div>
-              </div>
-              
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="logo2.png"
+            height="200px"
+            style="margin-top: 200px; margin-left: 170px;"
+          />
+        </div>
+        <div class="col-sm-4">
+          <form
+            name="myform"
+            style="margin-top: 200px;"
+            onsubmit="return validateForm()"
+            method="post"
+          >
+            <h1 style="font-size: 30px;">Login</h1>
+            <br />
 
-              
-          </div>
-   <script>
-       function validateForm()
-       {
-           var x=document.forms["myform"]["un"].value;
-           var y=document.forms["myform"]["pw"].value;
-           if(x=="")
-           {
-            alert('Empty Username');
-           }
-           if(y=="")
-           {
-            alert('Empty Password');
-           }
-           else if(x!="cb.en.u4cse17213")
-           {
-               alert('Invalid Username');
-           }
-           else if(y!="balaji2k.")
-           {
-               alert('Wrong Credentials');
-           }
-       }
-   </script>
-      </body>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Username"
+                id="un"
+                width="100px"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Enter Password"
+                id="pw"
+                width="100px"
+              />
+            </div>
+            <button class="btn btn-info" type="submit">Login</button>
+            <button
+              class="btn btn-default"
+              style="background-color: black; color: white;"
+              type="reset"
+            >
+              Reset
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      function validateForm() {
+        var x = document.forms["myform"]["un"].value;
+        var y = document.forms["myform"]["pw"].value;
+        if (x == "") {
+          alert("Empty Username");
+        }
+        if (y == "") {
+          alert("Empty Password");
+        } else if (x != "cb.en.u4cse17213") {
+          alert("Invalid Username");
+        } else if (y != "balaji2k.") {
+          alert("Wrong Credentials");
+        }
+      }
+    </script>
+  </body>
 </html>

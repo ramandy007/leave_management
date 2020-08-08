@@ -1,41 +1,56 @@
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link type="text/css" rel="stylesheet" href="stylesheet/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leave Approval</title>
     <style>
-        h2 {
-            padding-top: 50px;
-            padding-bottom: 10px;
-        }
+      h2 {
+        padding-top: 50px;
+        padding-bottom: 10px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="row">
-        <div class="col-sm">
-            <nav class="navbar navbar-default" style="background-color: black;">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <img src="public/amrita.png" />
-                    </div>
-                    <div class="nav navbar-right">
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="background-color: black; color: white;">Good Evening Balaji Sundar A <span class="caret"></span
+      <div class="col-sm">
+        <nav class="navbar navbar-default" style="background-color: black;">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <img src="public/amrita.png" />
+            </div>
+            <div class="nav navbar-right">
+              <li class="dropdown">
+                <a
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="#"
+                  style="background-color: black; color: white;"
+                  >Good Evening Balaji Sundar A <span class="caret"></span
                 ></a>
 
-                            <ul class="dropdown-menu" style="background-color: white;">
-                                <li>
-                                    <a href="#" style="margin-left: 10px; color: black;">Update Profile</a
+                <ul class="dropdown-menu" style="background-color: white;">
+                  <li>
+                    <a href="#" style="margin-left: 10px; color: black;"
+                      >Update Profile</a
                     >
                   </li>
 
                   <li>
-                    <a href="changePassword.html" style="margin-left: 10px; color: black;"
+                    <a
+                      href="changePassword.html"
+                      style="margin-left: 10px; color: black;"
                       >Change Password</a
                     >
                   </li>
@@ -65,87 +80,110 @@
                   <span class="icon"><i class="fa fa-desktop"></i></span>
                   <span class="title">Student Dashboard</span>
                 </a>
-                                </li>
+              </li>
 
-                                <li>
-                                    <a href="studentProfile.html" class="card">
-                                        <span class="icon"><i class="fa fa-user-circle-o"></i></span>
-                                        <span class="title">View Profile</span>
-                                    </a>
-                                </li>
+              <li>
+                <a href="studentProfile.html" class="card">
+                  <span class="icon"><i class="fa fa-user-circle-o"></i></span>
+                  <span class="title">View Profile</span>
+                </a>
+              </li>
 
-                                <li>
-                                    <a href="leaveForm.html" class="card" style="background-color:#007BFF; color:white;">
-                                        <span class="icon"><i class="fa fa-calendar"></i></span>
-                                        <span class="title">Apply Leave</span>
-                                    </a>
-                                </li>
+              <li>
+                <a
+                  href="leaveForm.html"
+                  class="card"
+                  style="background-color: #007bff; color: white;"
+                >
+                  <span class="icon"><i class="fa fa-calendar"></i></span>
+                  <span class="title">Apply Leave</span>
+                </a>
+              </li>
 
-                                <li>
-                                    <a href="history.html" class="card">
-                                        <span class="icon"><i class="fa fa-book"></i></span>
-                                        <span class="title">History & Status</span>
-                                    </a>
-                                </li>
-                            </ul>
-                    </div>
-                </div>
+              <li>
+                <a href="history.html" class="card">
+                  <span class="icon"><i class="fa fa-book"></i></span>
+                  <span class="title">History & Status</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-                <!-- swappable body starts here  -->
-                <div class="col-md-8 form-padding">
-                    <h2>Apply Leave</h2>
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="Rollnumber">RollNumber</label>
-                                <input type="Text" class="form-control" id="RollNumber" disabled />
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="Name">Name</label>
-                                <input type="text" class="form-control" id="Name" disabled />
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-4">
-                                <label for="Type_of_Leave">Type of Leave</label>
-                                <select class="form-control" id="Type_Leave">
+        <!-- swappable body starts here  -->
+        <div class="col-md-8 form-padding">
+          <h2>Apply Leave</h2>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="Rollnumber">RollNumber</label>
+                <input
+                  type="Text"
+                  class="form-control"
+                  id="RollNumber"
+                  disabled
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" id="Name" disabled />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="Type_of_Leave">Type of Leave</label>
+                <select class="form-control" id="Type_Leave">
                   <option>OD</option>
                   <option>Others</option>
                   <option>ML</option>
                 </select>
-                            </div>
-                            <div class="form-group col-md-8">
-                                <label for="Reason">Reason</label>
-                                <input type="text" class="form-control" id="Reason" placeholder="Reason for request?" maxlength="250" />
-                            </div>
-                        </div>
+              </div>
+              <div class="form-group col-md-8">
+                <label for="Reason">Reason</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Reason"
+                  placeholder="Reason for request?"
+                  maxlength="250"
+                />
+              </div>
+            </div>
 
-                        <div class="form-group">
-                            <label for="upload_Proof">Upload Proof(optional)</label>
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="customFile" />
-                                <label class="custom-file-label" for="customFile">Choose file</label
+            <div class="form-group">
+              <label for="upload_Proof">Upload Proof(optional)</label>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile" />
+                <label class="custom-file-label" for="customFile"
+                  >Choose file</label
                 >
               </div>
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="date">Start Date</label>
-                                <input type="date" class="form-control" id="Start_date" />
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="date">End Date</label>
-                                <input type="date" class="form-control" id="Start_date" />
-                            </div>
-                        </div>
+                <input type="date" class="form-control" id="Start_date" />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="date">End Date</label>
+                <input type="date" class="form-control" id="Start_date" />
+              </div>
+            </div>
 
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="periods">Periods(optional)</label>
-                                <div class="form-control">
-                                    <div class="custom-control custom-checkbox custom-control-inline">
-                                        <input type="checkbox" class="custom-control-input" id="slot1" />
-                                        <label class="custom-control-label" for="slot1">slot1</label
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="periods">Periods(optional)</label>
+                <div class="form-control">
+                  <div
+                    class="custom-control custom-checkbox custom-control-inline"
+                  >
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="slot1"
+                    />
+                    <label class="custom-control-label" for="slot1"
+                      >slot1</label
                     >
                   </div>
                   <div
@@ -188,10 +226,17 @@
               </div>
               <div class="form-group col-md-6">
                 <label for="periods">&nbsp;</label>
-                                        <div class="form-control">
-                                            <div class="custom-control custom-checkbox custom-control-inline">
-                                                <input type="checkbox" class="custom-control-input" id="slot5" />
-                                                <label class="custom-control-label" for="slot5">slot5</label
+                <div class="form-control">
+                  <div
+                    class="custom-control custom-checkbox custom-control-inline"
+                  >
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="slot5"
+                    />
+                    <label class="custom-control-label" for="slot5"
+                      >slot5</label
                     >
                   </div>
                   <div

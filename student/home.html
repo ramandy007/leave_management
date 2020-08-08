@@ -1,162 +1,247 @@
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-          $(document).ready(function(){
-            $(".hello").hide()
-            $("#hell1").hide()            
-          });
-          $(document).ready(function(){
-            $("#hell").click(function(){
-              $(".hello").show()
-              $("#hell1").show()
-              $("#hell").hide()
-            });
-          });
-          $(document).ready(function(){
-            $("#hell1").click(function(){
-              $(".hello").hide()
-              $("#hell1").hide()
-              $("#hell").show()
-            });
-          });
-        </script>        
-      <style>
-html,
-body {
-  margin: 0;
-}
-body {
-  height: 100vh;
-  width: 100vw;
-}
-* {
-  box-sizing: border-box;
-}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".hello").hide();
+        $("#hell1").hide();
+      });
+      $(document).ready(function () {
+        $("#hell").click(function () {
+          $(".hello").show();
+          $("#hell1").show();
+          $("#hell").hide();
+        });
+      });
+      $(document).ready(function () {
+        $("#hell1").click(function () {
+          $(".hello").hide();
+          $("#hell1").hide();
+          $("#hell").show();
+        });
+      });
+    </script>
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+      }
+      * {
+        box-sizing: border-box;
+      }
 
-.sidebar ul li a span.title {
-  display: inline-block;
-}
-.sidebar span.icon {
-  margin-right: 10px;
-  display: inline-block;
-}
-.sidebar ul li a {
-  display: block;
-  padding: 3px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  color: black;
-  background-color: white;
-  position: relative;
-  text-decoration: none;
-}
-.sidebar {
-  width: 250px;
-}
-</style>
-<title>Student Dashboard</title>
-</head>
-    <body>
-      <nav class="navbar navbar-default"  style="background-color: black;">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <img src="public/amrita.png">
-                  </div>
-                <div class="nav navbar-right" >                       
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="background-color: black; color:white;">Good Evening Balaji Sundar A
-                                <span class="caret"></span></a>                                
-                            <ul class="dropdown-menu" style="background-color:white; " style=>
-                                <li><a href="update.html" style="margin-left: 10px;  color:black;">Update Profile</a></li>                                
-                                <li><a href="changePassword.html" style="margin-left: 10px;  color:black;">Change Password</a></li>
-                                <div class="border-top my-3">     
-                                </div>                               
-                                <li><a href="index.html" style="margin-left: 10px;  color:black;">Logout</a></li>     
-                              </ul>
-                        </li>                   
-                </div>
-            </div>
-      </nav>
+      .sidebar ul li a span.title {
+        display: inline-block;
+      }
+      .sidebar span.icon {
+        margin-right: 10px;
+        display: inline-block;
+      }
+      .sidebar ul li a {
+        display: block;
+        padding: 3px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        color: black;
+        background-color: white;
+        position: relative;
+        text-decoration: none;
+      }
+      .sidebar {
+        width: 250px;
+      }
+    </style>
+    <title>Student Dashboard</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-default" style="background-color: black;">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-2 col-md-3 sidebar">
-            <div class="sidebar" style="margin-top: 100px;">
-              <ul style="list-style: none;" class="">
-                <li>
-                  <a href="home.html" class="card" style="background-color:#007BFF; color:white;">
-                    <span class="icon"><i class="fa fa-desktop"></i></span>
-                    <span class="title">Student Dashboard</span>
-                  </a>
-                </li>  
-                <li>
-                  <a href="studentProfile.html" class="card">
-                    <span class="icon"><i class="fa fa-user-circle-o"></i></span>
-                    <span class="title">View Profile</span>
-                  </a>
-                </li>  
-                <li>
-                  <a href="leaveForm.html" class="card">
-                    <span class="icon"><i class="fa fa-calendar"></i></span>
-                    <span class="title">Apply Leave</span>
-                  </a>
-                </li>
-                <li>
-                    <a href="history.html" class="card">
-                      <span class="icon"><i class="fa fa-book"></i></span>
-                      <span class="title">History & Status</span>
-                    </a>
-                  </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md" style="margin-left: 50px;" >
-            <h1 style="margin-top:10px;">Guidelines </h1><br>
-            <div class="card" >
-              <p style="margin-left: 5px;"> The Student will be able to apply leave, faculty will be notified with the request.Any action taken by the faculty will be notified to the student.</p>
-              </div>             
-                <h2 style="margin-top: 5px;"> About ICTS</h2>
-                <div class="card" style="margin-top:5px; ">
-              <p style="margin-left: 5px;"> The Information and Communication Technology Services (ICTS) Department is responsible for identifying, providing and maintaining reliable computing facilities, computing network environment, communication facilities and related infrastructure to facilitate education, research, instructional and Institute approved business services.</p>
-              <center>
-                <button class="btn btn-primary " id="hell" style="width:40%; align-content: center; margin-bottom:5px;">
-                  Read More
-                </button>
-              </center>
-              <p class="hello" style="margin-left: 5px;">The department administers all computer laboratories in the campus. The facilities are made available to the staff and students from 8.00 AM to 10.30 PM on all days excluding national holidays. The laboratories extend all facilities required by students to fulfill their requirements for academic purposes. The department staff in these labs also assists students in their academic work. All staff rooms are also equipped with sufficient computers to help faculty to carry out their day-to-day academic requirements and also to help them in their research activities.</P>
-              <center>
-                <button class="btn btn-primary " id="hell1" style="width:40%; align-content: center; margin-bottom:5px;">
-                  Read Less
-                </button>                
-              </center>             
-            </div>            
-          </div>
-          <div class="col-md" style="margin-left: 50px;">
-            <h1 style="margin-top:10px;">Schedule</h1><br>
-             <div class="card">
-                <div class="list-group" style="text-align:center;">
-                <a href="#" class="list-group-item list-group-item-action active">
-                  Slot Timings
+        <div class="navbar-header">
+          <img src="public/amrita.png" />
+        </div>
+        <div class="nav navbar-right">
+          <li class="dropdown">
+            <a
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              href="#"
+              style="background-color: black; color: white;"
+              >Good Evening Balaji Sundar A <span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu" style="background-color: white;">
+              <li>
+                <a href="update.html" style="margin-left: 10px; color: black;"
+                  >Update Profile</a
+                >
+              </li>
+              <li>
+                <a
+                  href="changePassword.html"
+                  style="margin-left: 10px; color: black;"
+                  >Change Password</a
+                >
+              </li>
+              <div class="border-top my-3"></div>
+              <li>
+                <a href="index.html" style="margin-left: 10px; color: black;"
+                  >Logout</a
+                >
+              </li>
+            </ul>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-2 col-md-3 sidebar">
+          <div class="sidebar" style="margin-top: 100px;">
+            <ul style="list-style: none;" class="">
+              <li>
+                <a
+                  href="home.html"
+                  class="card"
+                  style="background-color: #007bff; color: white;"
+                >
+                  <span class="icon"><i class="fa fa-desktop"></i></span>
+                  <span class="title">Student Dashboard</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">Slot 1: 09:00-10:00</a>
-                <a href="#" class="list-group-item list-group-item-action">Slot 2: 10:00-11:00</a>
-                <a href="#" class="list-group-item list-group-item-action">Slot 3: 11:00-12:00</a>
-                <a href="#" class="list-group-item list-group-item-action disabled">Slot 4: 12:00-13:00</a>
-                <a href="#" class="list-group-item list-group-item-action -action active">Lunch Break</a> 
-                <a href="#" class="list-group-item list-group-item-action disabled">Slot 6: 14:00-15:00</a>
-                <a href="#" class="list-group-item list-group-item-action disabled">Slot 7: 15:00-16:00</a>
-                <a href="#" class="list-group-item list-group-item-action disabled">Slot 8: 16:00-17:00</a> 
+              </li>
+              <li>
+                <a href="studentProfile.html" class="card">
+                  <span class="icon"><i class="fa fa-user-circle-o"></i></span>
+                  <span class="title">View Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href="leaveForm.html" class="card">
+                  <span class="icon"><i class="fa fa-calendar"></i></span>
+                  <span class="title">Apply Leave</span>
+                </a>
+              </li>
+              <li>
+                <a href="history.html" class="card">
+                  <span class="icon"><i class="fa fa-book"></i></span>
+                  <span class="title">History & Status</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md" style="margin-left: 50px;">
+          <h1 style="margin-top: 10px;">Guidelines</h1>
+          <br />
+          <div class="card">
+            <p style="margin-left: 5px;">
+              The Student will be able to apply leave, faculty will be notified
+              with the request.Any action taken by the faculty will be notified
+              to the student.
+            </p>
+          </div>
+          <h2 style="margin-top: 5px;">About ICTS</h2>
+          <div class="card" style="margin-top: 5px;">
+            <p style="margin-left: 5px;">
+              The Information and Communication Technology Services (ICTS)
+              Department is responsible for identifying, providing and
+              maintaining reliable computing facilities, computing network
+              environment, communication facilities and related infrastructure
+              to facilitate education, research, instructional and Institute
+              approved business services.
+            </p>
+            <center>
+              <button
+                class="btn btn-primary"
+                id="hell"
+                style="width: 40%; align-content: center; margin-bottom: 5px;"
+              >
+                Read More
+              </button>
+            </center>
+            <p class="hello" style="margin-left: 5px;">
+              The department administers all computer laboratories in the
+              campus. The facilities are made available to the staff and
+              students from 8.00 AM to 10.30 PM on all days excluding national
+              holidays. The laboratories extend all facilities required by
+              students to fulfill their requirements for academic purposes. The
+              department staff in these labs also assists students in their
+              academic work. All staff rooms are also equipped with sufficient
+              computers to help faculty to carry out their day-to-day academic
+              requirements and also to help them in their research activities.
+            </p>
+            <center>
+              <button
+                class="btn btn-primary"
+                id="hell1"
+                style="width: 40%; align-content: center; margin-bottom: 5px;"
+              >
+                Read Less
+              </button>
+            </center>
+          </div>
+        </div>
+        <div class="col-md" style="margin-left: 50px;">
+          <h1 style="margin-top: 10px;">Schedule</h1>
+          <br />
+          <div class="card">
+            <div class="list-group" style="text-align: center;">
+              <a href="#" class="list-group-item list-group-item-action active">
+                Slot Timings
+              </a>
+              <a href="#" class="list-group-item list-group-item-action"
+                >Slot 1: 09:00-10:00</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Slot 2: 10:00-11:00</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >Slot 3: 11:00-12:00</a
+              >
+              <a
+                href="#"
+                class="list-group-item list-group-item-action disabled"
+                >Slot 4: 12:00-13:00</a
+              >
+              <a
+                href="#"
+                class="list-group-item list-group-item-action -action active"
+                >Lunch Break</a
+              >
+              <a
+                href="#"
+                class="list-group-item list-group-item-action disabled"
+                >Slot 6: 14:00-15:00</a
+              >
+              <a
+                href="#"
+                class="list-group-item list-group-item-action disabled"
+                >Slot 7: 15:00-16:00</a
+              >
+              <a
+                href="#"
+                class="list-group-item list-group-item-action disabled"
+                >Slot 8: 16:00-17:00</a
+              >
             </div>
           </div>
         </div>
       </div>
-     </div>
+    </div>
   </body>
 </html>

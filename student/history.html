@@ -41,7 +41,9 @@
                   </li>
 
                   <li>
-                    <a href="changePassword.html" style="margin-left: 10px; color: black;"
+                    <a
+                      href="changePassword.html"
+                      style="margin-left: 10px; color: black;"
                       >Change Password</a
                     >
                   </li>
@@ -88,7 +90,11 @@
               </li>
 
               <li>
-                <a href="history.html" class="card" style="background-color:#007BFF; color:white;">
+                <a
+                  href="history.html"
+                  class="card"
+                  style="background-color: #007bff; color: white;"
+                >
                   <span class="icon"><i class="fa fa-book"></i></span>
                   <span class="title">History & Status</span>
                 </a>
@@ -98,219 +104,276 @@
         </div>
 
         <!-- swappable body starts here  -->
-          <div class="col-sm col-xs col-md" style="padding-right: 50px;">
-            <h2 style="padding-top: 50px;">History and Status</h2><br/>
-            <table class="table" style="margin-left:auto; margin-top:auto;" >
-              <thead>
-                <tr>
-                  <th>Type</th>
-                  <th>From Date</th>
-                  <th>To Date</th>
-                  <th>Slots</th>
-                  <th>Reason</th>
-                  <th>File Submitted</th>                  
-                  <th>Status</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    On Duty
-                  </td>
-                  <td>
-                    12/05/2020
-                  </td>
-                  <td>
-                    12/05/2020
-                  </td>
-                  <td>
-                    1-4        
-                  </td>
-                  <td>
-                    Hackathon
-                  </td>
-                  <td>
-                    OD Form File
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal0">View Status</button>
-                    <div class="modal fade" id="myModal0" role="dialog">
-                      <div class="modal-dialog">                        
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h4 class="modal-title">Status</h4>
-                            <button type="button" class="fa fa-close" data-dismiss="modal" style="background-color: red;color:white"></button> 
-                          </div>
-                          <div class="modal-body">
-                            <table class="table" >
-                              <thead>
-                                <tr>
-                                  <th>Applied On</th>
-                                  <th>Current Status</th>
-                                  <th>Approved On</th>
-                                  <th>Approved By</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    10/05/2020
-                                  </td>
-                                  <td>
-                                    <span class="text-success">Approved</span>
-                                  </td>
-                                  <td>
-                                    11/02/2020
-                                  </td>
-                                  <td>
-                                    Mr.M.Ritwik
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>                                                              
-                        </div>                                    
-                      </div>                                   
+        <div class="col-sm col-xs col-md" style="padding-right: 50px;">
+          <h2 style="padding-top: 50px;">History and Status</h2>
+          <br />
+          <table class="table" style="margin-left: auto; margin-top: auto;">
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>From Date</th>
+                <th>To Date</th>
+                <th>Slots</th>
+                <th>Reason</th>
+                <th>File Submitted</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  On Duty
+                </td>
+                <td>
+                  12/05/2020
+                </td>
+                <td>
+                  12/05/2020
+                </td>
+                <td>
+                  1-4
+                </td>
+                <td>
+                  Hackathon
+                </td>
+                <td>
+                  OD Form File
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#myModal0"
+                  >
+                    View Status
+                  </button>
+                  <div class="modal fade" id="myModal0" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Status</h4>
+                          <button
+                            type="button"
+                            class="fa fa-close"
+                            data-dismiss="modal"
+                            style="background-color: red; color: white;"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Applied On</th>
+                                <th>Current Status</th>
+                                <th>Approved On</th>
+                                <th>Approved By</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  10/05/2020
+                                </td>
+                                <td>
+                                  <span class="text-success">Approved</span>
+                                </td>
+                                <td>
+                                  11/02/2020
+                                </td>
+                                <td>
+                                  Mr.M.Ritwik
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
                     </div>
-                  </td>
-                  <td>                    
-                    <button type="button" class="btn btn-danger" onclick="confirm_select()" disabled>Cancel</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    On Duty
-                  </td>
-                  <td>
-                    12/05/2020
-                  </td>
-                  <td>
-                    12/05/2020
-                  </td>
-                  <td>
-                    1-4       
-                  </td>
-                  <td>
-                    Hackathon
-                  </td>
-                  <td>
-                    OD Form File
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">View Status</button>
-                    <div class="modal fade" id="myModal1" role="dialog">
-                      <div class="modal-dialog">                        
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h4 class="modal-title">Status</h4>
-                            <button type="button" class="fa fa-close" data-dismiss="modal" style="background-color: red;color:white"></button> 
-                          </div>
-                          <div class="modal-body">
-                            <table class="table" >
-                              <thead>
-                                <tr>
-                                  <th>Applied On</th>
-                                  <th>Current Status</th>
-                                  <th>Approved On</th>
-                                  <th>Approved By</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    08/05/2020
-                                  </td>
-                                  <td>
-                                    <span class="text-danger">Rejected</span>
-                                  </td>
-                                  <td>
-                                    09/02/2020
-                                  </td>
-                                  <td>
-                                    Mr.M.Ritwik
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>                                                              
-                        </div>                                    
-                      </div>                                   
+                  </div>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    onclick="confirm_select()"
+                    disabled
+                  >
+                    Cancel
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  On Duty
+                </td>
+                <td>
+                  12/05/2020
+                </td>
+                <td>
+                  12/05/2020
+                </td>
+                <td>
+                  1-4
+                </td>
+                <td>
+                  Hackathon
+                </td>
+                <td>
+                  OD Form File
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#myModal1"
+                  >
+                    View Status
+                  </button>
+                  <div class="modal fade" id="myModal1" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Status</h4>
+                          <button
+                            type="button"
+                            class="fa fa-close"
+                            data-dismiss="modal"
+                            style="background-color: red; color: white;"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Applied On</th>
+                                <th>Current Status</th>
+                                <th>Approved On</th>
+                                <th>Approved By</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  08/05/2020
+                                </td>
+                                <td>
+                                  <span class="text-danger">Rejected</span>
+                                </td>
+                                <td>
+                                  09/02/2020
+                                </td>
+                                <td>
+                                  Mr.M.Ritwik
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
                     </div>
-                  </td>
-                  <td>                    
-                    <button type="button" class="btn btn-danger" onclick="confirm_select()" disabled>Cancel</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Sick Leave
-                  </td>
-                  <td>
-                    13/05/2020
-                  </td>
-                  <td>
-                    13/05/2020
-                  </td>
-                  <td>
-                    1-8       
-                  </td>
-                  <td>
-                    Not feeling well
-                  </td>
-                  <td>
-                    ML Certificate File
-                  </td>
-                  <td>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">View Status</button>
-                    <div class="modal fade" id="myModal2" role="dialog">
-                      <div class="modal-dialog">                        
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h4 class="modal-title">Status</h4>
-                            <button type="button" class="fa fa-close" data-dismiss="modal" style="background-color: red;color:white"></button> 
-                          </div>
-                          <div class="modal-body">
-                            <table class="table" >
-                              <thead>
-                                <tr>
-                                  <th>Applied On</th>
-                                  <th>Current Status</th>
-                                  <th>Approved On</th>
-                                  <th>Approved By</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    11/05/2020
-                                  </td>
-                                  <td>
-                                    <span class="text-muted">Pending</span><br/>
-                                  </td>
-                                  <td>
-                                    -
-                                  </td>
-                                  <td>
-                                    -
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>                                                              
-                        </div>                                    
-                      </div>                                   
+                  </div>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    onclick="confirm_select()"
+                    disabled
+                  >
+                    Cancel
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Sick Leave
+                </td>
+                <td>
+                  13/05/2020
+                </td>
+                <td>
+                  13/05/2020
+                </td>
+                <td>
+                  1-8
+                </td>
+                <td>
+                  Not feeling well
+                </td>
+                <td>
+                  ML Certificate File
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#myModal2"
+                  >
+                    View Status
+                  </button>
+                  <div class="modal fade" id="myModal2" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Status</h4>
+                          <button
+                            type="button"
+                            class="fa fa-close"
+                            data-dismiss="modal"
+                            style="background-color: red; color: white;"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Applied On</th>
+                                <th>Current Status</th>
+                                <th>Approved On</th>
+                                <th>Approved By</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  11/05/2020
+                                </td>
+                                <td>
+                                  <span class="text-muted">Pending</span><br />
+                                </td>
+                                <td>
+                                  -
+                                </td>
+                                <td>
+                                  -
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
                     </div>
-                  </td>
-                  <td>                    
-                    <button type="button" class="btn btn-danger" onclick="confirm_select()">Cancel</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table> 
-          </div>
-      <!-- swappable body ends here -->
-      <!-- footer starts here -/->
+                  </div>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    onclick="confirm_select()"
+                  >
+                    Cancel
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- swappable body ends here -->
+        <!-- footer starts here -/->
       <div class="row">
         <div class="col-sm align-self-end">
           <footer class="footer mt-auto py-3">
@@ -321,6 +384,7 @@
         </div>
       </div>
       <!-/- footer ends here -->
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -341,19 +405,15 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      function confirm_select() 
-      {
+      function confirm_select() {
         var txt;
         var r = confirm("Are you sure, do you want to cancel?");
-        if (r == true) 
-        {
+        if (r == true) {
           txt = "You pressed OK!";
-        } 
-        else 
-        {
+        } else {
           txt = "You pressed Cancel!";
         }
       }
-      </script>
+    </script>
   </body>
 </html>
