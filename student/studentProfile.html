@@ -1,335 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-        crossorigin="anonymous"
-        />
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <script
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"
-        ></script>
-        <script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"
-        ></script>
-        <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"
-        ></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Student Profile</title>
-        <style>
-            html,
-            body
-            {
-                margin: 0;
-            }
-            body
-            {
-                height: 100vh;
-                width: 100vw;
-            }
-            *
-            {
-                box-sizing: border-box;
-            }
-            .sidebar ul li a span.title
-            {
-                display: inline-block;
-            }
-            .sidebar span.icon
-            {
-                margin-right: 10px;
-                display: inline-block;
-            }
-            .sidebar ul li a
-            {
-                display: block;
-                padding: 3px;
-                margin-bottom: 10px;
-                margin-right: 10px;
-                color: black;
-                background-color: white;
-                position: relative;
-                text-decoration: none;
-            }
-            .sidebar
-            {
-                width: 250px;
-                margin-top: 100px;
-            }
-            .profile-img{
-                text-align: center;
-            }
-            .profile-img img{
-                width: 35%;
-                height: 50%;
-            }
-            .profile-head h5{
-                color: #333;
-            }
-            .profile-head h6{
-                color: #0062cc;
-            }
-            .profile-head .nav-tabs{
-                margin-bottom:5%;
-            }
-            .profile-head .nav-tabs .nav-link{
-                font-weight:600;
-                border: none;
-            }
-            .profile-head .nav-tabs .nav-link.active{
-                border: none;
-                border-bottom:2px solid #0062cc;
-            }
-            .profile-work{
-                padding: 14%;
-                margin-top: -15%;
-            }
-            .profile-work p{
-                font-size: 12px;
-                color: #818182;
-                font-weight: 600;
-                margin-top: 10%;
-            }
-            .profile-work a{
-                text-decoration: none;
-                color: #495057;
-                font-weight: 600;
-                font-size: 14px;
-            }
-            .profile-work ul{
-                list-style: none;
-            }
-            .profile-tab label{
-                font-weight: 600;
-            }
-            .profile-tab p{
-                font-weight: 600;
-                color: #0062cc;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="row">
-            <div class="col-sm">
-                <nav class="navbar navbar-default" style="background-color: black;">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <img src="public/amrita.png" />
-                        </div>
-                        <div class="nav navbar-right">
-                            <li class="dropdown">
-                            <a
-                                class="dropdown-toggle"
-                                data-toggle="dropdown"
-                                href="#"
-                                style="background-color: black; color: white;"
-                                >Good Evening Balaji Sundar A <span class="caret"></span></a>
-    
-                            <ul class="dropdown-menu" style="background-color: white;">
-                                <li>
-                                <a href="#" style="margin-left: 10px; color: black;"
-                                    >Update Profile</a
-                                >
-                                </li>
-            
-                                <li>
-                                <a href="changePassword.html" style="margin-left: 10px; color: black;"
-                                    >Change Password</a
-                                >
-                                </li>
-                                <div class="border-top my-3"></div>
-            
-                                <li>
-                                <a
-                                    href="index.html"
-                                    style="margin-left: 10px; color: black;"
-                                    >Logout</a
-                                >
-                                </li>
-                            </ul>
-                            </li>
-                        </div>
-                    </div>
-                </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .sidebar ul li a span.title {
+        display: inline-block;
+      }
+      .sidebar span.icon {
+        margin-right: 10px;
+        display: inline-block;
+      }
+      .sidebar ul li a {
+        display: block;
+        padding: 3px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        color: black;
+        background-color: white;
+        position: relative;
+        text-decoration: none;
+      }
+      .sidebar {
+        width: 250px;
+        margin-top: 100px;
+      }
+      .profile-img {
+        text-align: center;
+      }
+      .profile-img img {
+        width: 35%;
+        height: 50%;
+      }
+      .profile-head h5 {
+        color: #333;
+      }
+      .profile-head h6 {
+        color: #0062cc;
+      }
+      .profile-head .nav-tabs {
+        margin-bottom: 5%;
+      }
+      .profile-head .nav-tabs .nav-link {
+        font-weight: 600;
+        border: none;
+      }
+      .profile-head .nav-tabs .nav-link.active {
+        border: none;
+        border-bottom: 2px solid #0062cc;
+      }
+      .profile-work {
+        padding: 14%;
+        margin-top: -15%;
+      }
+      .profile-work p {
+        font-size: 12px;
+        color: #818182;
+        font-weight: 600;
+        margin-top: 10%;
+      }
+      .profile-work a {
+        text-decoration: none;
+        color: #495057;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .profile-work ul {
+        list-style: none;
+      }
+      .profile-tab label {
+        font-weight: 600;
+      }
+      .profile-tab p {
+        font-weight: 600;
+        color: #0062cc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-sm">
+        <nav class="navbar navbar-default" style="background-color: black;">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <img src="public/amrita.png" />
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-2 col-md-3">
-                    <div class="sidebar">
-                        <ul style="list-style: none;" class="">
-                            <li>
-                            <a href="home.html" class="card">
-                                <span class="icon"><i class="fa fa-desktop"></i></span>
-                                <span class="title">Student Dashboard</span>
-                            </a>
-                            </li>
-            
-                            <li>
-                            <a href="studentProfile.html" class="card" style="background-color:#007BFF; color:white;">
-                                <span class="icon"><i class="fa fa-user-circle-o"></i></span>
-                                <span class="title">View Profile</span>
-                            </a>
-                            </li>
-            
-                            <li>
-                            <a href="leaveForm.html" class="card">
-                                <span class="icon"><i class="fa fa-calendar"></i></span>
-                                <span class="title">Apply Leave</span>
-                            </a>
-                            </li>
-            
-                            <li>
-                            <a href="history.html" class="card">
-                                <span class="icon"><i class="fa fa-book"></i></span>
-                                <span class="title">History & Status</span>
-                            </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="nav navbar-right">
+              <li class="dropdown">
+                <a
+                  class="dropdown-toggle"
+                  data-toggle="dropdown"
+                  href="#"
+                  style="background-color: black; color: white;"
+                  >Good Evening Balaji Sundar A <span class="caret"></span
+                ></a>
 
-                <!-- swappable body starts here  -->
-                <div class="col-sm col-xs col-md" style="padding-right: 50px;">
-                    <h2 style="padding-top: 50px;">Profile</h2><br/>
-                        <form method="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="profile-img">
-                                        <img src="public/student.png" alt=""/>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="profile-head">
-                                        <h5>
-                                            NameOfTheStudent
-                                        </h5>
-                                        <h6>
-                                            Roll Number
-                                        </h6>
-                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Guardian Details</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="profile-work">
-                                        <p>Personal Email</p>
-                                        <i class="text-primary">studentname@gmail.com</i><br/>
-                                        <p>Mobile Number</p>
-                                        <i class="text-primary">9876543210</i>
-                                        <p>Admitted Campus</p>
-                                        <i class="text-primary">Coimbatore</i><br/>
-                                        <p>Blood Group</p>
-                                        <i class="text-primary">O +Ve</i><br/>
-                                        <p>DOB</p>
-                                        <i class="text-primary">09/08/1999</i><br/>
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="tab-content profile-tab" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Department</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <p>Computer Science and Engineering</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Email</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <p>cb.en.u4cse172XX@cb.students.amrita.edu</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Class Advisor</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <p>Mr.M.Ritwik</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Current Semester</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <p>7</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Current CGPA</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <p>8.54</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Primary Guardian Name</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <p>Mr.V.Raj</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Mobile</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <p>8794561320</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Relation</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <p>Father</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Email</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <p>raj1320@gmail.com</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>           
-                </div>
+                <ul class="dropdown-menu" style="background-color: white;">
+                  <li>
+                    <a
+                      href="editProfile.html"
+                      style="margin-left: 10px; color: black;"
+                      >Update Profile</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="changePassword.html"
+                      style="margin-left: 10px; color: black;"
+                      >Change Password</a
+                    >
+                  </li>
+                  <div class="border-top my-3"></div>
+
+                  <li>
+                    <a
+                      href="index.html"
+                      style="margin-left: 10px; color: black;"
+                      >Logout</a
+                    >
+                  </li>
+                </ul>
+              </li>
             </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-2 col-md-3">
+          <div class="sidebar">
+            <ul style="list-style: none;" class="">
+              <li>
+                <a href="home.html" class="card">
+                  <span class="icon"><i class="fa fa-desktop"></i></span>
+                  <span class="title">Student Dashboard</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="studentProfile.html"
+                  class="card"
+                  style="background-color: #007bff; color: white;"
+                >
+                  <span class="icon"><i class="fa fa-user-circle-o"></i></span>
+                  <span class="title">View Profile</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="leaveForm.html" class="card">
+                  <span class="icon"><i class="fa fa-calendar"></i></span>
+                  <span class="title">Apply Leave</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="history.html" class="card">
+                  <span class="icon"><i class="fa fa-book"></i></span>
+                  <span class="title">History & Status</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </body>
+
+        <!-- swappable body starts here  -->
+        <div class="col-sm col-xs col-md" style="padding-right: 50px;">
+          <h2 style="padding-top: 50px;">Profile</h2>
+          <br />
+          <form method="post">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="profile-img">
+                  <img src="public/student.png" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="profile-head">
+                  <h5>
+                    NameOfTheStudent
+                  </h5>
+                  <h6>
+                    Roll Number
+                  </h6>
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        id="home-tab"
+                        data-toggle="tab"
+                        href="#home"
+                        role="tab"
+                        aria-controls="home"
+                        aria-selected="true"
+                        >About</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="profile-tab"
+                        data-toggle="tab"
+                        href="#profile"
+                        role="tab"
+                        aria-controls="profile"
+                        aria-selected="false"
+                        >Guardian Details</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="profile-work">
+                  <p>Personal Email</p>
+                  <i class="text-primary">studentname@gmail.com</i><br />
+                  <p>Mobile Number</p>
+                  <i class="text-primary">9876543210</i>
+                  <p>Admitted Campus</p>
+                  <i class="text-primary">Coimbatore</i><br />
+                  <p>Blood Group</p>
+                  <i class="text-primary">O +Ve</i><br />
+                  <p>DOB</p>
+                  <i class="text-primary">09/08/1999</i><br />
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="tab-content profile-tab" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="home"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                  >
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Department</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p>Computer Science and Engineering</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Email</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p>cb.en.u4cse172XX@cb.students.amrita.edu</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Class Advisor</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p>Mr.M.Ritwik</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Current Semester</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p>7</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Current CGPA</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p>8.54</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="profile"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                  >
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Primary Guardian Name</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p>Mr.V.Raj</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Mobile</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p>8794561320</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Relation</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p>Father</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Email</label>
+                      </div>
+                      <div class="col-md-6">
+                        <p>raj1320@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
