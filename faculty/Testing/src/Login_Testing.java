@@ -1,9 +1,10 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 public class Login_Testing
 {
-    public static void main(String[] args) throws InterruptedException
+    public static void main(String[] args) 
     {
         String tcun="cb.en.u4cse17213";
         String tcpw="balaji2k.";

@@ -22,12 +22,14 @@ import org.openqa.selenium.Keys;
 import java.util.*;
 import java.net.MalformedURLException;
 import java.net.URL;
-public class ChangePw1 {
+public class ProfilePageTesting {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
   @Before
-  public void setUp() {
+  public void setUp() 
+  {
+	System.setProperty("webdriver.chrome.driver","src\\chromedriver.exe");
     driver = new ChromeDriver();
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
@@ -37,15 +39,15 @@ public class ChangePw1 {
     driver.quit();
   }
   @Test
-  public void test1() {
-    driver.get("https://ramandy007.github.io/leave_management/faculty/ChangePW.html");
-    driver.manage().window().setSize(new Dimension(789, 683));
-    driver.findElement(By.id("currpw")).click();
-    driver.findElement(By.id("currpw")).sendKeys("abcd");
-    driver.findElement(By.id("pw")).click();
-    driver.findElement(By.cssSelector(".btn-primary")).click();
-    assertThat(driver.switchTo().alert().getText(), is("Both New Password And Re-Enter New Password Fields Cant Be Empty"));
-    driver.findElement(By.id("pw")).click();
+  public void test4() throws InterruptedException {
+    driver.get("https://ramandy007.github.io/leave_management/faculty/FacultyProfile.html");
+    driver.manage().window().maximize();
+    driver.findElement(By.id("profile-tab")).click();
+    Thread.sleep(2000);
+    driver.findElement(By.id("home-tab")).click();
+    Thread.sleep(2000);
+    driver.findElement(By.id("profile-tab")).click();
+    Thread.sleep(2000);
     driver.close();
   }
 }
