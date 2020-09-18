@@ -7,6 +7,9 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     <title>
       Login Page
@@ -29,6 +32,7 @@
             
             method="get"
             action="home.html"
+			onsubmit="return validateForm()"
           >
             <h1 style="font-size: 30px;">Login</h1>
             <br />
@@ -37,7 +41,7 @@
                 type="text"
                 class="form-control"
                 placeholder="Enter Username"
-                id="un"
+                name="un"
                 width="100px"
               />
             </div>
@@ -46,7 +50,7 @@
                 type="password"
                 class="form-control"
                 placeholder="Enter Password"
-                id="pw"
+                name="pw"
                 width="100px"
               />
             </div>
@@ -62,10 +66,38 @@
         </div>
       </div>
     </div>
+	<script>
+       function validateForm()
+       {
+	      
+           var x=document.forms["myform"]["un"].value;
+           var y=document.forms["myform"]["pw"].value;
+           if(x=='cb.en.u4cse17213' && y=='balaji2k.')
+           {
+               return true;
+           }
+           else if(x=="")
+		   {
+               alert("Empty UserName")
+               return false;
+           }
+		   else if(y=="")
+		   {
+               alert("Empty Password")
+               return false;
+           }
+		   else
+		   {
+		     alert("Invalid Credentials")
+			 return false;
+		   }
+           
+           
+       }
+       
+   </script>
     
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
   </body>
 </html>
