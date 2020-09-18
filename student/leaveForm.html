@@ -19,13 +19,17 @@
         padding-top: 50px;
         padding-bottom: 10px;
       }
+      .od,
+      .not-od {
+        display: none;
+      }
     </style>
   </head>
 
   <body>
     <div class="row">
       <div class="col-sm">
-        <nav class="navbar navbar-default" style="background-color: black;">
+        <nav class="navbar navbar-default" style="background-color: black">
           <div class="container-fluid">
             <div class="navbar-header">
               <img src="public/amrita.png" />
@@ -36,15 +40,15 @@
                   class="dropdown-toggle"
                   data-toggle="dropdown"
                   href="#"
-                  style="background-color: black; color: white;"
+                  style="background-color: black; color: white"
                   >Good Evening Balaji Sundar A <span class="caret"></span
                 ></a>
 
-                <ul class="dropdown-menu" style="background-color: white;">
+                <ul class="dropdown-menu" style="background-color: white">
                   <li>
                     <a
                       href="editProfile.html"
-                      style="margin-left: 10px; color: black;"
+                      style="margin-left: 10px; color: black"
                       >Update Profile</a
                     >
                   </li>
@@ -52,16 +56,14 @@
                   <li>
                     <a
                       href="changePassword.html"
-                      style="margin-left: 10px; color: black;"
+                      style="margin-left: 10px; color: black"
                       >Change Password</a
                     >
                   </li>
                   <div class="border-top my-3"></div>
 
                   <li>
-                    <a
-                      href="index.html"
-                      style="margin-left: 10px; color: black;"
+                    <a href="index.html" style="margin-left: 10px; color: black"
                       >Logout</a
                     >
                   </li>
@@ -76,7 +78,7 @@
       <div class="row">
         <div class="col-xs-2 col-md-3">
           <div class="sidebar">
-            <ul style="list-style: none;" class="">
+            <ul style="list-style: none" class="">
               <li>
                 <a href="home.html" class="card">
                   <span class="icon"><i class="fa fa-desktop"></i></span>
@@ -95,7 +97,7 @@
                 <a
                   href="leaveForm.html"
                   class="card"
-                  style="background-color: #007bff; color: white;"
+                  style="background-color: #007bff; color: white"
                 >
                   <span class="icon"><i class="fa fa-calendar"></i></span>
                   <span class="title">Apply Leave</span>
@@ -134,13 +136,20 @@
             <div class="form-row">
               <div class="form-group col-md-4">
                 <label for="Type_of_Leave">Type of Leave</label>
-                <select class="form-control" id="Type_Leave">
-                  <option>OD</option>
-                  <option>Others</option>
-                  <option>ML</option>
+                <select
+                  class="form-control"
+                  id="Type_Leave"
+                  onchange="selectorChange(this)"
+                >
+                  <option value="none" selected disabled hidden>
+                    Select OD Type
+                  </option>
+                  <option value="OD">OD</option>
+                  <option value="Others">Others</option>
+                  <option value="ML">ML</option>
                 </select>
               </div>
-              <div class="form-group col-md-8">
+              <div class="form-group col-md-8 not-od">
                 <label for="Reason">Reason</label>
                 <input
                   type="text"
@@ -152,7 +161,30 @@
               </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-row">
+              <div class="form-group col-md-4 od">
+                <label for="OD Event">Event Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="EventName"
+                  placeholder="Name of the event"
+                  maxlength="75"
+                />
+              </div>
+              <div class="form-group col-md-8 od">
+                <label for="Reason">Faculty Incharge</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Faculty"
+                  placeholder="Name of Faculty"
+                  maxlength="75"
+                />
+              </div>
+            </div>
+
+            <div class="form-group not-od">
               <label for="upload_Proof">Upload Proof(optional)</label>
               <div class="custom-file">
                 <input type="file" class="custom-file-input" id="customFile" />
@@ -284,7 +316,7 @@
             <button type="submit" class="btn btn-primary">Apply</button>
             <button
               class="btn btn-default"
-              style="background-color: black; color: white;"
+              style="background-color: black; color: white"
               type="reset"
             >
               Reset
@@ -298,7 +330,7 @@
         <div class="col-sm align-self-end">
           <footer class="footer mt-auto py-3">
             <div class="container">
-              <span class="text-muted">Copyleft Rats.limited</span>
+              <span class="text-muted">Group-CSE-C</span>
             </div>
           </footer>
         </div>
@@ -307,7 +339,10 @@
     </div>
 
     <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="leaveForm.js"></script>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
