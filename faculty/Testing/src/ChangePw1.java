@@ -26,17 +26,17 @@ public class ChangePw1 {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
- 
+  @Before
   public void setUp() {
     driver = new ChromeDriver();
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
   }
-  
+  @After
   public void tearDown() {
     driver.quit();
   }
-  
+  @Test
   public void test1() {
     driver.get("https://ramandy007.github.io/leave_management/faculty/ChangePW.html");
     driver.manage().window().setSize(new Dimension(789, 683));
@@ -44,7 +44,7 @@ public class ChangePw1 {
     driver.findElement(By.id("currpw")).sendKeys("abcd");
     driver.findElement(By.id("pw")).click();
     driver.findElement(By.cssSelector(".btn-primary")).click();
-    assertThat(driver.switchTo().alert().getText().equals("Both New Password And Re-Enter New Password Fields Cant Be Empty"));
+    assertThat(driver.switchTo().alert().getText(), is("Both New Password And Re-Enter New Password Fields Cant Be Empty"));
     driver.findElement(By.id("pw")).click();
     driver.close();
   }
