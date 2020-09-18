@@ -42,7 +42,7 @@
   <body>
     <div class="row">
       <div class="col-sm-12">
-        <nav class="navbar navbar-default" style="background-color: black;">
+        <nav class="navbar navbar-default" style="background-color: black">
           <div class="container-fluid">
             <div class="navbar-header">
               <img
@@ -56,29 +56,27 @@
                   class="dropdown-toggle"
                   data-toggle="dropdown"
                   href="#"
-                  style="background-color: black; color: white;"
+                  style="background-color: black; color: white"
                   >Good Evening Balaji Sundar A <span class="caret"></span>
                 </a>
-                <ul class="dropdown-menu" style="background-color: white;">
+                <ul class="dropdown-menu" style="background-color: white">
                   <li>
                     <a
                       href="studentProfile.html"
-                      style="margin-left: 10px; color: black;"
+                      style="margin-left: 10px; color: black"
                       >Update Profile
                     </a>
                   </li>
                   <li>
                     <a
                       href="changePassword.html"
-                      style="margin-left: 10px; color: black;"
+                      style="margin-left: 10px; color: black"
                       >Change Password
                     </a>
                   </li>
                   <div class="border-top my-3"></div>
                   <li>
-                    <a
-                      href="index.html"
-                      style="margin-left: 10px; color: black;"
+                    <a href="index.html" style="margin-left: 10px; color: black"
                       >Logout
                     </a>
                   </li>
@@ -92,8 +90,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12 col-md-4">
-          <div class="sidebar" style="margin-left: 40px;">
-            <ul style="list-style: none;" class="">
+          <div class="sidebar" style="margin-left: 40px">
+            <ul style="list-style: none" class="">
               <li>
                 <a href="home.html" class="card">
                   <span class="icon"><i class="fa fa-desktop"></i></span>
@@ -121,28 +119,33 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-6" style="margin-top: 20px;">
+        <div class="col-md-6" style="margin-top: 20px">
           <h1>Edit Profile</h1>
           <hr />
           <div class="text-center">
             <img
               src="public/student.png"
               class="avatar img-circle"
+              id="profimg"
               alt="avatar"
             />
             <h6>Upload a different photo</h6>
             <input
               type="file"
-              style="margin-left: 80px;"
-              style="align-self: center;"
+              id="newimg"
+              style="margin-left: 80px"
+              style="align-self: center"
+              onchange="return fileValidation()"
             />
           </div>
           <br />
           <h3>Personal Info</h3>
           <br />
           <form
+            name="myform"
             class="form-horizontal"
             role="form"
+            onsubmit="return validate()"
             action="studentProfile.html"
             method="GET"
           >
@@ -152,6 +155,7 @@
                 <input
                   class="form-control"
                   type="email"
+                  id="email"
                   placeholder="New Email"
                 />
               </div>
@@ -162,6 +166,7 @@
                 <input
                   class="form-control"
                   type="text"
+                  id="phone"
                   placeholder="New Phone Number"
                 />
               </div>
@@ -175,6 +180,7 @@
                 <input
                   class="form-control"
                   type="text"
+                  id="gname"
                   placeholder="Specify Primary Guardian Name"
                 />
               </div>
@@ -186,6 +192,7 @@
                 <input
                   class="form-control"
                   type="text"
+                  id="gphone"
                   placeholder="Guardian Phone Number"
                 />
               </div>
@@ -196,6 +203,7 @@
                 <input
                   class="form-control"
                   type="email"
+                  id="gemail"
                   placeholder="Guardian Email Address"
                 />
               </div>
@@ -212,7 +220,7 @@
                 <input
                   type="reset"
                   class="btn btn-default"
-                  style="background-color: black; color: white;"
+                  style="background-color: black; color: white"
                   value="Cancel"
                 />
               </div>
@@ -222,5 +230,41 @@
       </div>
       <hr />
     </div>
+    <script>
+      function fileValidation() {
+        var z = document.getElementById("newimg");
+        var allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i;
+
+        if (!allowedExtensions.exec(z.value)) {
+          alert("Invalid file type. Only jpg/jpeg/png");
+          z.value = "";
+          return false;
+        }
+        return true;
+      }
+      function validateForm() {
+        var x = document.forms["myform"]["phone"].value;
+        var y = document.forms["myform"]["gphone"].value;
+        var z = document.forms["myform"]["gname"].value;
+        var re = /^([0-9]{10})$/;
+        if (x != "" && x.match(re) == null) {
+          alert("Phone Number Invalid.");
+          return false;
+        }
+        if (y != "" && y.match(re) == null) {
+          alert("Guardian Phone Number Invalid.");
+          return false;
+        }
+        if (z != "" && z.match(/^([a-zA-Z]+[a-zA-Z.]*)$/) == null) {
+          alert("Guardian Name Invalid.");
+          return false;
+        }
+        alert("Profile Updated Successfully.");
+        return true;
+      }
+      function validate() {
+        return validateForm();
+      }
+    </script>
   </body>
 </html>
