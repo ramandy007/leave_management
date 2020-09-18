@@ -23,3 +23,49 @@ function selectorChange(event) {
     }
   }
 }
+
+function validate() {
+  typeOfLeave = document.querySelector("#Type_Leave");
+  startDate = document.querySelector("#Start_date");
+  endDate = document.querySelector("#End_date");
+  faculty = document.querySelector("#Faculty");
+  eventName = document.querySelector("#EventName");
+  reason = document.querySelector("#Reason");
+  //   console.log(new Date(startDate).getTime());
+  //   console.log(new Date(endDate).getTime());
+
+  flag = false;
+  error = "";
+  if (typeOfLeave.value == "none") {
+    error += "Select Type of Leave\n";
+    flag = true;
+  }
+  if (startDate.value == "" || endDate.value == "") {
+    flag = true;
+    error = error + "Check the start date or end date. \n";
+  } else {
+    if (
+      new Date(endDate.value).getTime() < new Date(startDate.value).getTime()
+    ) {
+      flag = true;
+      error += "Duration is invalid End date < Start date";
+    }
+  }
+  if (typeOfLeave.value == "OD") {
+    if ((faculty.value = "" || eventName.value == "")) {
+      flag = true;
+      error += "Check the Faculty or Event Name. \n";
+    }
+  } else {
+    if (reason.value == "") {
+      error += "Enter Reason of leave\n";
+      flag = true;
+    }
+  }
+
+  if (flag) {
+    alert(error);
+  } else {
+    alert("Success");
+  }
+}

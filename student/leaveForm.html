@@ -117,7 +117,7 @@
         <!-- swappable body starts here  -->
         <div class="col-md-8 form-padding">
           <h2>Apply Leave</h2>
-          <form>
+          <form onsubmit="validate()">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="Rollnumber">RollNumber</label>
@@ -142,7 +142,7 @@
                   onchange="selectorChange(this)"
                 >
                   <option value="none" selected disabled hidden>
-                    Select OD Type
+                    Select Type
                   </option>
                   <option value="OD">OD</option>
                   <option value="Others">Others</option>
@@ -173,7 +173,7 @@
                 />
               </div>
               <div class="form-group col-md-8 od">
-                <label for="Reason">Faculty Incharge</label>
+                <label for="Faculty Incharge">Faculty Incharge</label>
                 <input
                   type="text"
                   class="form-control"
@@ -200,7 +200,7 @@
               </div>
               <div class="form-group col-md-6">
                 <label for="date">End Date</label>
-                <input type="date" class="form-control" id="Start_date" />
+                <input type="date" class="form-control" id="End_date" />
               </div>
             </div>
 
