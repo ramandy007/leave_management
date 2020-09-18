@@ -110,7 +110,7 @@
                     <div class="text-center">
                         <img src="Images/placeholder1.png" class="avatar img-circle" alt="avatar">
                         <h6>Upload a different photo</h6>
-                        <center><input type="file" style="margin-left: 80px;"></center>
+                        <center><input type="file" style="margin-left: 80px;" onchange="return Validation()" id="img"></center>
                     </div>   
                     <br>                              
                     <h3>Personal Info</h3>     
@@ -177,7 +177,18 @@
             </div>
             <hr>
 			<script>
-			
+			function Validation()
+			{
+			   var allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i;
+			   var img=document.getElementById("img").value;
+			    if (!allowedExtensions.exec(img.value)) 
+				{
+                         alert("Invalid file type. Only jpg/jpeg/png");
+                          z.value = "";
+                               return false;
+                }
+			   
+			}
 			function validate()
 			{
 			   
