@@ -1,0 +1,33 @@
+Epics :
+1)Authentication
+2)Student Dashboard
+3)Faculty Dashboard
+Epic 1:
+Student Login - As a student, I will be able to login to my profile
+Faculty Login - As a faculty ,I will be able to login to my faculty profile
+Forgot Password - As a user i will be able to receive a link in order to change my password in case it is forgotten
+Logout - As a user i will be able to logout
+
+Epic 2:
+Update Password - As a student I will be able to change my password
+Apply leave - As a student I will be able to apply for leave when necessary
+History And Status - As a student I will be to check the history of leaves of absence applied as well as the status of the application
+Edit Profile - As a student i will be able to edit my profile and update it
+View Dashboard - As a student I will be able to view the student dashboard
+View Profile - As a student I will be able to view my student profile
+
+
+Epic 3:
+Update Password - As a Faculty I will be able to change my password
+Approve leave - As a Faculty I will be able to approve leave for students when necessary based on cerrtain terms and conditions
+Edit Profile - As a Faculty i will be able to edit my profile and update it
+View Dashboard - As a Faculty I will be able to view the faculty dashboard
+View Profile - As a Faculty I will be able to view my faculty profile
+
+
+
+
+
+
+
+
