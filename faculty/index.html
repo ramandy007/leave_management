@@ -31,11 +31,12 @@
                             <button class="btn btn-default" style="background-color:black; color:white;" type="reset"> Reset </button>
                     </form>
                 </div>
-              </div>
-              
 
-              
-          </div>
+            
+        </div>
+    </div>
+    </body>
+
    <script>
        function validateForm()
        {
@@ -45,10 +46,22 @@
            {
                return true;
            }
-           else{
-               alert("Invalid Credentials")
+           else if(x=="")
+		   {
+               alert("Empty UserName")
                return false;
            }
+		   else if(y=="")
+		   {
+               alert("Empty Password")
+               return false;
+           }
+		   else
+		   {
+		     alert("Invalid Credentials")
+			 return false;
+		   }
+           
            
        }
        
@@ -56,3 +69,5 @@
   
       </body>
 </html>
+
+
