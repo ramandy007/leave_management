@@ -119,7 +119,7 @@
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Email</label>
                             <div class="col-lg-8">
-                                <input class="form-control" >
+                                <input class="form-control" id="email">
                             </div>                        
                         </div>
                         <div class="form-group">
@@ -134,33 +134,33 @@
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Areas Of Research</label>
                             <div class="col-lg-8">
-                                <input class="form-control" type="text" value="" name="a_o_r">
+                                <input class="form-control" type="text" value="" id="a_o_r">
                             </div>
                             <br>
                             <div class="col-lg-8">
-                                <input class="form-control" type="text" value="" name="a_o_r1">
+                                <input class="form-control" type="text" value="" id="a_o_r1">
                             </div>
                             <br>
                             <div class="col-lg-8">
-                                <input class="form-control" type="text" value="" name="a_o_r2">
+                                <input class="form-control" type="text" value="" id="a_o_r2">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-lg-4 control-label">Highest Degree Obtained</label>
                             <div class="col-lg-8">
-                                <input class="form-control" type="text" name="h_o_d">
+                                <input class="form-control" type="text" id="h_o_d">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label">Paper Publications</label>
                             <div class="col-md-8">
-                                <input class="form-control" type="text" name="P_P">
+                                <input class="form-control" type="text" id="P_P">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label">Projects Guided</label>
                             <div class="col-md-8">
-                                <input class="form-control" type="number" name="P_G">
+                                <input class="form-control" type="number" id="P_G">
                             </div>
                         </div>
                         <div class="form-group">
@@ -183,14 +183,62 @@
 			   
                 var l_prof=document.getElementById("L_prof").value;
                 var letters = /^[A-Za-z]+[_]?[1-9]+$/;
-                 if(letters.test(l_prof))
-                 {
-                        return true;
-                 }
+                var name=/^[A-Za-z\s]{8,}$/;
+                var deg=/^[A-Za-z]{2}[.][A-Za-z]{4}$/;
+                var email= /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                var Email=document.getElementById("email").value;
+                var a_o_r=document.getElementById("a_o_r").value;
+                var a_o_r1=document.getElementById("a_o_r1").value;
+                var a_o_r2=document.getElementById("a_o_r2").value;
+                var h_o_d=document.getElementById("h_o_d").value;
+                var p_p=document.getElementById("P_P").value;
+                var p_g=document.getElementById("P_G").value;
+                if(email.test(Email))
+                {
+                    if(letters.test(l_prof))
+                    {
+                        if(name.test(a_o_r) && name.test(a_o_r1) && name.test(a_o_r2) )
+                        {
+                            if(deg.test(h_o_d))
+                            {
+                                 if(name.test(p_p))
+                                 {
+                                     if(Integer.parseInt(p_g)>=0)
+                                     {
+                                         return true;
+                                     }
+                                     else{
+                                         alert("Projects Guided Count Can't Be Negative");
+                                         return false;
+                                     }
+                                 }
+                                 else{
+                                     alert("Enter Proper Paper Publication");
+                                     return false;
+                                 }
+                            }
+                            else{
+                                alert("Enter A Valid Degree");
+                                return false;
+                            }
+                        }
+                        else
+                        {
+                          alert("Enter Proper Areas Of Research");
+                          return false;
+                        }
+                    }
+                    else{
+                        alert("Invalid Profile Name");
+                        return false;
+                    }
+                }
                 else{
-                    alert("Invalid Profile Name");
+                    alert("Invalid Email Id");
                     return false;
                 }
+
+              
 			   
 			}
 			</script>
