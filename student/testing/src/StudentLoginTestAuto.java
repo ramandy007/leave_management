@@ -26,7 +26,7 @@ import org.openqa.selenium.UnhandledAlertException;
 import java.util.*;
 import java.net.MalformedURLException;
 import java.net.URL;
-public class StudentLoginTestTest {
+public class StudentLoginTestAuto {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
@@ -46,8 +46,7 @@ public class StudentLoginTestTest {
     driver.get("https://ramandy007.github.io/leave_management/student/");
     driver.manage().window().setSize(new Dimension(1304, 768));
     driver.findElement(By.id("sb")).click();
-    String msg = driver.switchTo().alert().getText();
-    assertThat(msg, is("Empty UserName"));
+    assertThat(driver.switchTo().alert().getText(), is("Empty UserName"));
     driver.findElement(By.cssSelector(".btn-default")).click();
     driver.findElement(By.name("un")).click();
     driver.findElement(By.name("un")).sendKeys("cb.en.u4cse17213");
