@@ -19,7 +19,7 @@ public class LoginTestingAlerts
             driver.findElement(By.id("pw")).sendKeys(tcpw[i]);
             driver.findElement(By.id("sub")).click();
             Alert alert = driver.switchTo().alert();
-            String alertMessage= driver.switchTo().alert().getText();
+            String alertMessage= alert.getText();
             if(alertMessage.equalsIgnoreCase(exp[i]))
             {
                 System.out.println("Successful Test");
